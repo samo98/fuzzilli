@@ -26,6 +26,10 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
+        .package(
+            url: "https://github.com/nicklockwood/SwiftFormat",
+            from: "0.44.4"
+        ),
     ],
     targets: [
         .target(name: "libsocket", dependencies: []),

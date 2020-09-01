@@ -17,3 +17,5 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: swift test -v
+    - name: Run Swift format
+      run: swift run swiftformat Tests/ Sources/ --lint --exclude Sources/Fuzzilli/Protobuf/ --swiftversion 5
